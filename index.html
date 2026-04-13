@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الخطة التسويقية لعلامة دافا - Shera3 Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --turquoise: #40E0D0;
+            --sea-blue: #006994;
+            --dark-deep: #011627;
+            --dafa-orange: #FF9F1C;
+        }
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(135deg, #004d4d 0%, #001a33 100%);
+            color: #E0E1DD;
+            min-height: 100vh;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-5px);
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px rgba(64, 224, 208, 0.4); }
+            50% { box-shadow: 0 0 25px rgba(64, 224, 208, 0.8); }
+            100% { box-shadow: 0 0 5px rgba(64, 224, 208, 0.4); }
+        }
+        @keyframes square-pulse {
+            0% { transform: scale(1); border-color: var(--turquoise); }
+            50% { transform: scale(1.05); border-color: #fff; }
+            100% { transform: scale(1); border-color: var(--turquoise); }
+        }
+        .watermark {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 70px;
+            height: 70px;
+            z-index: 1000;
+            cursor: pointer;
+            animation: float 4s ease-in-out infinite, glow 3s infinite;
+            border-radius: 12px;
+            border: 2px solid var(--turquoise);
+            overflow: hidden;
+            background: #000;
+        }
+        .logo-square {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 12px;
+            animation: square-pulse 4s ease-in-out infinite;
+            border: 3px solid var(--turquoise);
+        }
+        .contact-btn {
+            background: #25D366;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+        }
+        .contact-btn:hover {
+            transform: scale(1.08);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+        }
+        .section-title {
+            color: var(--turquoise);
+            border-right: 4px solid var(--dafa-orange);
+            padding-right: 15px;
+            margin-bottom: 25px;
+            font-weight: 800;
+        }
+        .list-item::before {
+            content: "•";
+            color: var(--turquoise);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-right: -1em;
+        }
+        .badge-saudi {
+            background: #006C35;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .month-indicator {
+            background: var(--dafa-orange);
+            color: #000;
+            padding: 2px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        .kpi-badge {
+            background: rgba(64, 224, 208, 0.15);
+            border: 1px solid var(--turquoise);
+            padding: 5px 12px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: var(--turquoise);
+        }
+        .creative-box {
+            background: rgba(0, 0, 0, 0.3);
+            border-right: 3px solid var(--turquoise);
+            padding: 15px;
+            border-radius: 0 10px 10px 0;
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body class="antialiased pb-10">
+
+    <!-- Floating Animated Watermark -->
+    <a href="https://shera3agency.com/" target="_blank" class="watermark" title="زيارة وكالة شراع">
+        <img src="https://i.ibb.co/CKvQG1F0/file.jpg" alt="Shera3 Watermark" class="w-full h-full object-cover">
+    </a>
+
+    <header class="py-12 px-6 text-center">
+        <div class="flex justify-center mb-6">
+            <img src="https://i.ibb.co/CKvQG1F0/file.jpg" alt="Shera3 Logo" class="logo-square shadow-2xl">
+        </div>
+        <div class="badge-saudi">منتج سعودي 100% 🇸🇦</div>
+        <h1 class="text-3xl md:text-5xl font-extrabold mb-4 uppercase tracking-wider">الخطة التسويقية — <span class="text-[#40E0D0]">دافا 🧴</span></h1>
+        <p class="text-lg text-gray-300 font-semibold">خطة تسويقية متكاملة لمدة 3 شهور</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+
+        <!-- نظرة عامة والخصائص -->
+        <section class="glass-card p-8 md:p-10 border-r-4 border-[#40E0D0]">
+            <h2 class="text-2xl font-bold section-title">خصائص البراند والاستراتيجية</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <ul class="space-y-3 text-gray-200">
+                        <li class="list-item">المنتج: منظفات سعودية عالية الجودة.</li>
+                        <li class="list-item">صناعة سعودية 100% (فخر الصناعة الوطنية).</li>
+                        <li class="list-item">الاستهداف: السوق السعودي (كافة المناطق).</li>
+                        <li class="list-item">الاعتماد على الأداء (Performance) + بناء البراند (Branding).</li>
+                    </ul>
+                </div>
+                <div class="bg-black/20 p-6 rounded-2xl border border-white/5">
+                    <h3 class="font-bold text-[#FF9F1C] mb-4">المحاور الرئيسية للخطة:</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-3 py-1 bg-white/10 rounded-lg text-xs">SEO</span>
+                        <span class="px-3 py-1 bg-white/10 rounded-lg text-xs">تطوير واجهة المتجر (UI/UX)</span>
+                        <span class="px-3 py-1 bg-white/10 rounded-lg text-xs">حملات TikTok Ads</span>
+                        <span class="px-3 py-1 bg-white/10 rounded-lg text-xs">حملات Meta Ads</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section class="text-center">
+            <h2 class="text-2xl font-bold mb-8 text-white">📅 Timeline العام</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card p-6 border-t-4 border-[#40E0D0]">
+                    <div class="text-[#40E0D0] font-black text-xl mb-2">الشهر الأول</div>
+                    <p class="text-sm text-gray-400">التركيز: الأساسيات والبنية التحتية الرقمية.</p>
+                </div>
+                <div class="glass-card p-6 border-t-4 border-[#FF9F1C]">
+                    <div class="text-[#FF9F1C] font-black text-xl mb-2">الشهر الثاني</div>
+                    <p class="text-sm text-gray-400">التركيز: التوسع وتفعيل الحملات وتحسين الفانل.</p>
+                </div>
+                <div class="glass-card p-6 border-t-4 border-white">
+                    <div class="text-white font-black text-xl mb-2">الشهر الثالث</div>
+                    <p class="text-sm text-gray-400">التركيز: التحسين + النمو + الاستدامة.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- الشهر الأول بالتفصيل -->
+        <section class="glass-card p-8 md:p-10">
+            <div class="month-indicator">الشهر الأول — الأساسيات (بناء البنية التحتية)</div>
+            
+            <div class="space-y-10">
+                <!-- SEO -->
+                <div>
+                    <h3 class="text-xl font-bold text-[#40E0D0] mb-4">أولاً: SEO — التأسيس</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <h4 class="font-bold text-[#FF9F1C]">Keyword Research:</h4>
+                            <p class="text-sm text-gray-300">بحث الكلمات المفتاحية: منظفات سعودية، صابون ملابس، منظفات منزلية، شامبو عباية، منظف أرضيات، منظفات قوية للبقع.</p>
+                            <h4 class="font-bold text-[#FF9F1C]">Technical SEO Audit:</h4>
+                            <ul class="text-sm text-gray-400 space-y-1">
+                                <li class="list-item">سرعة الموقع و Core Web Vitals.</li>
+                                <li class="list-item">هيكل الروابط URL و sitemap.xml.</li>
+                                <li class="list-item">تحسين الأرشفة والتوافق مع الموبايل.</li>
+                            </ul>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="font-bold text-[#FF9F1C]">On Page & Tracking:</h4>
+                            <ul class="text-sm text-gray-400 space-y-1">
+                                <li class="list-item">تحسين العناوين والوصف (Meta) لصفحات الأكثر مبيعاً.</li>
+                                <li class="list-item">إضافة Schema (Product, Reviews, FAQ).</li>
+                                <li class="list-item">ربط Google Search Console & GA4.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UI/UX -->
+                <div>
+                    <h3 class="text-xl font-bold text-[#40E0D0] mb-4">ثانياً: واجهة المتجر (UI/UX)</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <ul class="text-sm text-gray-400 space-y-2">
+                            <li class="list-item"><span class="text-white font-bold">تحسين الرئيسية:</span> تصميم Hero banner يوضح USP (سعودي 100%، جودة عالية).</li>
+                            <li class="list-item"><span class="text-white font-bold">عرض المنتجات:</span> إضافة Badges الصور الاحترافية (خلفية بيضاء و Lifestyle).</li>
+                            <li class="list-item"><span class="text-white font-bold">Trust Signals:</span> شهادات الجودة، سنوات الخبرة، تقييمات العملاء.</li>
+                        </ul>
+                        <ul class="text-sm text-gray-400 space-y-2">
+                            <li class="list-item">تحسين سرعة تحميل الصور والأكواد.</li>
+                            <li class="list-item">تحسين الأداء العام للموقع لتسهيل الشراء.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- TikTok & Meta -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold text-[#40E0D0] mb-4">ثالثاً: TikTok Ads</h3>
+                        <ul class="text-sm text-gray-400 space-y-2">
+                            <li class="list-item">Setup: حساب بيزنس وتركيب Pixel.</li>
+                            <li class="list-item">المحتوى: إنتاج 6 فيديوهات UGC (قبل وبعد، تجربة المنتج).</li>
+                            <li class="list-item">الحملة: Awareness (بميزانية 500-1000 ريال).</li>
+                            <li class="list-item">الجمهور: نساء 25-45، اهتمامات التنظيف والأسرة.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-[#40E0D0] mb-4">رابعاً: Meta Ads</h3>
+                        <ul class="text-sm text-gray-400 space-y-2">
+                            <li class="list-item">Setup: Pixel و Conversion API.</li>
+                            <li class="list-item">Catalog: إنشاء الكتالوج و Dynamic Ads.</li>
+                            <li class="list-item">الحملة: Awareness فيديو.</li>
+                            <li class="list-item">A/B Testing: اختبار الفيديو مقابل الصورة الثابتة.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Creative Examples Month 1 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="creative-box">
+                        <p class="font-bold text-[#40E0D0] mb-2">TikTok Creative:</p>
+                        "وين كنت من دافا طول هذا الوقت؟ 🤍 منتج سعودي أصيل من مصنع كرنف"
+                    </div>
+                    <div class="creative-box">
+                        <p class="font-bold text-[#40E0D0] mb-2">Meta Story:</p>
+                        "دافا — صديق عيلتك من 2002. منتج سعودي جودته تتكلم عن نفسها 🇸🇦"
+                    </div>
+                </div>
+
+                <!-- KPIs Month 1 -->
+                <div class="flex flex-wrap gap-3">
+                    <span class="kpi-badge">زيادة السرعة 20%</span>
+                    <span class="kpi-badge">15 كلمة مفتاحية</span>
+                    <span class="kpi-badge">6 فيديوهات TikTok</span>
+                    <span class="kpi-badge">50,000+ ظهور</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- الشهر الثاني بالتفصيل -->
+        <section class="glass-card p-8 md:p-10">
+            <div class="month-indicator">الشهر الثاني — التوسع وتفعيل الفانل</div>
+            
+            <div class="space-y-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold text-[#40E0D0] mb-4">أولاً: SEO Content & Links</h3>
+                        <ul class="text-sm text-gray-400 space-y-2">
+                            <li class="list-item">مدونة: 4 مقالات (طرق غسل العباية، إزالة البقع، نصائح منزلية).</li>
+                            <li class="list-item">Link Building: روابط في مدونات سعودية ومجلات أونلاين.</li>
+                            <li class="list-item">تحسين وصف المنتجات وصفحات الفئات.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-[#40E0D0] mb-4">ثانياً: تطوير المتجر والتحويل</h3>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li class="list-item">إضافة Bundles (عروض مجمعة وسلال منتجات).</li>
+                            <li class="list-item">تفعيل Cross Sell / Upsell وتقليل خطوات الشراء.</li>
+                            <li class="list-item">تكامل الواتساب وإنشاء صفحات هبوط للحملات.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold text-[#40E0D0] mb-4">ثالثاً: TikTok Scaling</h3>
+                        <ul class="text-sm text-gray-400 space-y-2">
+                            <li class="list-item">حملات Conversion (Add to cart / Purchase).</li>
+                            <li class="list-item">التعاون مع 3-5 مؤثرين (Micro Influencers).</li>
+                            <li class="list-item">إطلاق هاشتاج تحدي #تحدي_نظافة_البيت.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-[#40E0D0] mb-4">رابعاً: Meta Retargeting</h3>
+                        <ul class="text-sm text-gray-400 space-y-2">
+                            <li class="list-item">إعادة استهداف زوار الموقع ومشاهدي الفيديو.</li>
+                            <li class="list-item">إنشاء جماهير مشابهة (Lookalike Audience).</li>
+                            <li class="list-item">تفعيل Instagram Shopping.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="creative-box">
+                        <p class="font-bold text-[#40E0D0] mb-2">TikTok Influencer:</p>
+                        "جربت دافا وما صدقت! الرائحة رائعة والملابس كأنها جديدة 😍 #تحدي_نظافة_البيت"
+                    </div>
+                    <div class="creative-box">
+                        <p class="font-bold text-[#40E0D0] mb-2">Meta Retargeting:</p>
+                        "لسه مترددة؟ 🤔 شوفي آراء عملاءنا.. أكثر من 20 سنة في السوق السعودي!"
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-3">
+                    <span class="kpi-badge">Organic Traffic +40%</span>
+                    <span class="kpi-badge">ROAS 3 - 5</span>
+                    <span class="kpi-badge">5 مؤثرين</span>
+                    <span class="kpi-badge">تقليل هجر السلة 20%</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- الشهر الثالث بالتفصيل -->
+        <section class="glass-card p-8 md:p-10">
+            <div class="month-indicator">الشهر الثالث — النمو والاستدامة</div>
+            
+            <div class="space-y-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold text-[#40E0D0] mb-4">أولاً: SEO Authority</h3>
+                        <ul class="text-sm text-gray-400 space-y-2">
+                            <li class="list-item">استهداف كلمات شرائية (High Intent).</li>
+                            <li class="list-item">تحسين Google My Business وصفحات المقارنة.</li>
+                            <li class="list-item">تحليل GA4 وتصدر نتائج البحث.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-[#40E0D0] mb-4">ثانياً: الاحتفاظ بالعملاء</h3>
+                        <ul class="text-sm text-gray-400 space-y-2">
+                            <li class="list-item">Loyalty Program ونقاط المكافآت.</li>
+                            <li class="list-item">تسويق عبر البريد و SMS (عروض ومتابعة).</li>
+                            <li class="list-item">تفعيل نظام الاشتراكات (Subscription Model).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold text-[#40E0D0] mb-4">ثالثاً: TikTok Expansion</h3>
+                        <ul class="text-sm text-gray-400 space-y-2">
+                            <li class="list-item">توسيع الجمهور (استهداف الرجال).</li>
+                            <li class="list-item">محتوى تعليمي (كيف تنظف...) وتفعيل TikTok Shop.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-[#40E0D0] mb-4">رابعاً: Meta Full Funnel</h3>
+                        <ul class="text-sm text-gray-400 space-y-2">
+                            <li class="list-item">التوسع الجغرافي (الإمارات، الكويت).</li>
+                            <li class="list-item">حملات موسمية (رمضان، الأعياد).</li>
+                            <li class="list-item">اعتماد Value Based Lookalike.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="creative-box">
+                        <p class="font-bold text-[#40E0D0] mb-2">TikTok Educational:</p>
+                        "3 أخطاء بنعملها عند غسل الملابس 🚫 وكيف نصلحها باستخدام دافا ✅ صنع في السعودية 🇸🇦"
+                    </div>
+                    <div class="creative-box">
+                        <p class="font-bold text-[#40E0D0] mb-2">Meta Seasonal:</p>
+                        "بيت نظيف لاستقبال أغلى الناس.. عروض دافا للأعياد لفترة محدودة ⏳"
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-3">
+                    <span class="kpi-badge">Top 10 Google</span>
+                    <span class="kpi-badge">ROAS 5 - 8x</span>
+                    <span class="kpi-badge">نمو مبيعات 60%</span>
+                    <span class="kpi-badge">30% عملاء متكررين</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ميزانية التوزيع -->
+        <section class="glass-card p-8">
+            <h2 class="text-2xl font-bold section-title">💰 توزيع الميزانية المقترح (شهرياً)</h2>
+            <div class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <div class="flex justify-between text-xs"><span>TikTok Ads</span><span>35%</span></div>
+                        <div class="w-full bg-white/5 rounded-full h-2 overflow-hidden"><div class="bg-[#40E0D0] h-full" style="width: 35%"></div></div>
+                        
+                        <div class="flex justify-between text-xs"><span>Meta Ads</span><span>35%</span></div>
+                        <div class="w-full bg-white/5 rounded-full h-2 overflow-hidden"><div class="bg-[#006994] h-full" style="width: 35%"></div></div>
+                        
+                        <div class="flex justify-between text-xs"><span>Influencer Marketing</span><span>15%</span></div>
+                        <div class="w-full bg-white/5 rounded-full h-2 overflow-hidden"><div class="bg-[#FF9F1C] h-full" style="width: 15%"></div></div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between text-xs"><span>SEO + Content</span><span>10%</span></div>
+                        <div class="w-full bg-white/5 rounded-full h-2 overflow-hidden"><div class="bg-gray-400 h-full" style="width: 10%"></div></div>
+                        
+                        <div class="flex justify-between text-xs"><span>تطوير المتجر</span><span>5%</span></div>
+                        <div class="w-full bg-white/5 rounded-full h-2 overflow-hidden"><div class="bg-white h-full" style="width: 5%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="glass-card p-12 text-center bg-white/10 border-2 border-[#40E0D0] relative">
+            <h2 class="text-3xl font-bold mb-6 text-[#FF9F1C]">جاهزون لنقل "دافا" إلى القمة؟</h2>
+            <p class="text-xl leading-relaxed max-w-3xl mx-auto mb-10 text-gray-300">
+                فريق وكالة شراع ملتزم بتحويل هذه الخطة إلى نتائج ملموسة تعكس عراقة وجودة المنظفات السعودية.
+            </p>
+            <div class="flex flex-col items-center gap-6">
+                <a href="https://api.whatsapp.com/send/?phone=966552809979&text&type=phone_number&app_absent=0" class="contact-btn">
+                    <span>تواصل معنا لاعتماد الخطة الآن</span>
+                    <span class="text-2xl">💬</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="mt-20 py-16 px-6 glass-card rounded-none border-x-0 border-b-0 text-center relative">
+        <div class="flex justify-center mb-8">
+            <img src="https://i.ibb.co/CKvQG1F0/file.jpg" alt="Shera3 Logo" class="logo-square h-28 w-28">
+        </div>
+        <p class="text-gray-300 font-bold text-lg mb-4">جميع الحقوق محفوظة لدى <span class="text-[#40E0D0]">shera3 agency</span></p>
+        <div class="text-xs text-gray-500 uppercase tracking-[0.2em]">Shera3 Agency • Digital Strategy for DAFA • 2026</div>
+    </footer>
+
+</body>
+</html>
